@@ -1,0 +1,82 @@
+/* =======================================★★★★★ 전체 공용 선택자 ★★★★★ */
+main {}
+main .index_wrap {/* 풀컨텐츠 */}
+main .index_wrap .container {/* 컨텐츠너비 w1400 */}
+main .content_title {}
+main .content_title .contents_name {}
+main .content_title .contents_txt {}
+main .content_title .contents_menu {}
+main .content_title .contents_menu .active {}
+main .content_title .contents_menu .all {}
+main .content_title .contents_menu .make_up {}
+main .content_title .contents_menu .skincare {}
+main .view_more {/* more 버튼 */
+    font-size:0.875rem; line-height:1.3; letter-spacing:-0.02em;
+    padding:10px 8px; border-bottom:1px solid #232323;
+}
+main .view_more img {margin-left:10px; position:relative; top:4px;}
+main .container .product_box {}
+main .container .product_box .pb {}
+main .container .product_box .pb .swiper {}
+main .container .product_box .pb .swiper .swiper-wrapper {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide a {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide a img {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title a {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {}
+/* =======================================★★★★★ 메인배너 */
+main .main_bnr {}
+main .main_bnr .main_swiper {
+    width:100%; height:100vh;
+}
+main .main_bnr .main_swiper .swiper-wrapper {}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_product {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_product img {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title .sub_title {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title .main_title {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title .slide_txt {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title .view_more {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .slide_title .view_more img {/* 슬라이드 공용 */}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 {
+    background-image:url(../images/bnr_001.jpg);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title {background:yellow;
+    width:1400px; margin:0 auto;
+}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .bnr_product {display:inline-block; margin-bottom:78px;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .bnr_product img {}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .sub_title {letter-spacing:-0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .main_title {
+    font-size:4rem; font-weight:900; letter-spacing:-0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .slide_txt {
+    line-height:1.5; letter-spacing:-0.02em;
+    margin:20px 0 30px 0;
+}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .view_more {}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .view_more img {}
+main .main_bnr .main_swiper .swiper-wrapper .slide2 {background:aqua;}
+main .main_bnr .main_swiper .swiper-wrapper .slide3 {background:red;}
+main .main_bnr .main_dot {}
+main .main_bnr .main_dot li {/* 페이지네이션 전체 */}
+main .main_bnr .main_dot .dot1 {}
+main .main_bnr .main_dot .dot2 {}
+main .main_bnr .main_dot .dot3 {}
+/* =======================================★★★★★ 1열 Best Seller */
+main .best_seller {}
+main .best_seller .container {}
+main .best_seller .container .contents_title {}
+main .best_seller .container .contents_title .contents_name {}
+main .best_seller .container .contents_title .contents_name .best_menu {}
+main .best_seller .container .contents_title .contents_name .best_menu li {}
+main .best_seller .container .contents_title .contents_name .best_menu .active {}
+main .best_seller .container .contents_title .contents_name .best_menu .all {}
+main .best_seller .container .contents_title .contents_name .best_menu .make_up {}
+main .best_seller .container .contents_title .contents_name .best_menu .skincare {}

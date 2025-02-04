@@ -1,0 +1,1 @@
+const bsAllSwiper = new Swiper('.bs_all_swiper')
