@@ -1,3 +1,27 @@
+@font-face {
+    font-family:hankenR;
+    src: url(../fonts/HankenGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family:hankenM;
+    src: url(../fonts/HankenGrotesk-Medium.ttf);
+}
+@font-face {
+    font-family:hankenSB;
+    src: url(../fonts/HankenGrotesk-SemiBold.ttf);
+}
+@font-face {
+    font-family:hankenB;
+    src: url(../fonts/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family:hankenBB;
+    src: url(../fonts/HankenGrotesk-Black.ttf);
+}
+@font-face {
+    font-family:gloockR;
+    src: url(../fonts/Gloock-Regular.ttf);
+}
 body, html, h1,h2,h3,h4,h5,h6,
 p,div,dl,dt,dd,ul,ol,li,video,blockquote,hr,a,address,
 span,em,img,strong,sub,sup,del,s,mark,code,
