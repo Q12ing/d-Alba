@@ -2,46 +2,58 @@
 main {}
 main .index_wrap {/* 풀컨텐츠 */ padding:80px 0;}
 main .index_wrap .container {/* 컨텐츠너비 w1400 */
-    max-width:1400px; margin:0 auto; text-align:center;
+    max-width:1400px; margin:0 auto;
 }
-main .contents_title {}
+main .contents_title {margin-bottom:50px;}
+main .contents_title * {letter-spacing:-0.02em;}
 main .contents_title .contents_name {
-    font-size:2rem; letter-spacing:-0.02em; margin-bottom:20px;
+    font-size:2rem; margin-bottom:20px;
     font-family:"hankenB","pretendard",sans-serif;
 }
-main .contents_title .contents_txt {}
+main .contents_title .contents_txt {color:#555}
 main .contents_title .contents_menu {}
 main .contents_title .contents_menu li {
-    letter-spacing:-0.02em;color:#555; display:inline-block; cursor:pointer;
+    color:#555; display:inline-block; cursor:pointer;
 }
 main .contents_title .contents_menu li::after {
     content:''; display:block; background:#b97e21; width:100%; height:2px; margin-top:5px;
-    transform:scale(0); transition:transform 0.3s;
+    transform:scale(0);
 }
-main .contents_title .contents_menu li:hover::after {transform:scale(1);}
-main .contents_title .contents_menu .active {}
+main .contents_title .contents_menu li:hover::after {transform:scale(1); transition:transform 0.3s;}
+main .contents_title .contents_menu li:hover {color:#232323;}
+main .contents_title .contents_menu .active {/* border-bottom:2px solid #b97e21 위치를 after랑 어떻게 맞추지요*/}
 main .contents_title .contents_menu .all {}
 main .contents_title .contents_menu .make_up {margin:0 30px;}
 main .contents_title .contents_menu .skincare {}
 main .view_more {/* more 버튼 */
     font-size:0.875rem; line-height:1.3; letter-spacing:-0.02em;
     padding:10px 8px; border-bottom:1px solid #232323;
+    display:inline-block;
 }
 main .view_more:hover {opacity:0.8;}
 main .view_more img {margin-left:10px; position:relative; top:4px;}
-main .container .product_box {}
+main .container .product_box {width:100%; position:relative;}
 main .container .product_box .pb {} /* swiper 부모+프로그레스 wrap */
+main .container .product_box .all {} /* 개별 swiper 부모+프로그레스 wrap */
+main .container .product_box .makeup {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
+main .container .product_box .skincare {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
 main .container .product_box .pb .swiper {width:100%; height:500px;} /* swiper 부모 */
 main .container .product_box .pb .swiper .swiper-wrapper {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum {
+    margin-bottom:20px; border-radius:10px; display:block;
+}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum:hover {
+    background:rgba(0,0,0,0.05); /* 강사님에게 여쭤보기 (사이트 창을 줄이면 선택되는 영역이 이상함) */
+}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum img {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title a {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {text-align:left; margin-top:20px;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product * {letter-spacing:-0.02em;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {margin-bottom:15px;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title a {font-weight:500;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {}
-main .pb .progress_more {background:yellow; display:flex; justify-content:space-between; align-items:center;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {font-size:0.875rem; font-weight:300; opacity:0.5;}
+main .pb .progress_more {background:yellow; display:flex; justify-content:space-between; align-items:center; margin-top:60px;}
 main .pb .progress_more .progress_bar {width:1350px; height:2px; background:#ccc;}
 main .pb .progress_more .progress_bar .active_progress_bar {background:#b97e21;}
 main .pb .progress_more a {}
@@ -94,7 +106,7 @@ main .main_bnr .main_dot .dot2 {margin:20px 0;}
 main .main_bnr .main_dot .dot3 {}
 /* =======================================★★★★★ 1열 Best Seller */
 main .best_seller {}
-main .best_seller .container {}
+main .best_seller .container {text-align:center;}
 main .best_seller .container .contents_title {}
 main .best_seller .container .contents_title .contents_name {}
 main .best_seller .container .contents_title .contents_name .best_menu {}
@@ -103,14 +115,228 @@ main .best_seller .container .contents_title .contents_name .best_menu .active {
 main .best_seller .container .contents_title .contents_name .best_menu .all {}
 main .best_seller .container .contents_title .contents_name .best_menu .make_up {}
 main .best_seller .container .contents_title .contents_name .best_menu .skincare {}
-main .best_seller .container .product_box {}
-main .best_seller .container .product_box .all {}
-main .best_seller .container .product_box .all .bs_all_swiper {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 > .thum {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 > .thum img {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .title {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .title a {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .price {}
-main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .price del {}
+main .best_seller .container .bs_box {}
+main .best_seller .container .bs_box .pb {}
+main .best_seller .container .bs_box .all {}
+main .best_seller .container .bs_box .makeup {}
+main .best_seller .container .bs_box .skincare {}
+main .best_seller .container .bs_box .pb .bs_all_swiper {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide > .thum {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide > .thum img {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product .title {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product .title a {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product .price {}
+main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product .price del {}
+/* =======================================★★★★★ 2열 Brand Story */
+main .brand_story {width:100%; position:relative;}
+main .brand_story video {
+    width:730px; height:405px;
+    position:absolute; top:180px; left:297px; z-index:490;
+}
+main .brand_story .brand_content {
+    height:600px;
+    background-image:url(../images/brand_story_bg.png);
+    background-size:cover;
+    position:relative; z-index:500;
+}
+main .brand_story .brand_content .brand_content_txt {
+    padding-top:150px; padding-left:1100px;
+}
+main .brand_story .brand_content .brand_content_txt .top {
+    font-size:3rem; line-height:1.3; letter-spacing:-0.04em;
+    font-family:"hankenB","pretendard",sans-serif;
+    margin-bottom:15px;
+}
+main .brand_story .brand_content .brand_content_txt .top span {
+    font-size:3.75rem;
+    font-family:"hankenB","pretendard",sans-serif;
+}
+main .brand_story .brand_content .brand_content_txt p {
+    line-height:1.5; letter-spacing:-0.02em; 
+}
+main .brand_story .brand_content .brand_content_txt .view_more {margin-top:45px;}
+main .brand_story .brand_content .brand_content_txt .view_more img {}
+/* =======================================★★★★★ 3열 Collection */
+main .collection {background:#f5f5f5; }
+main .collection .container {max-width:100%; text-align:center; background-color:yellow;}
+main .collection .container .contents_title {}
+main .collection .container .contents_title .contents_name {}
+main .collection .container .contents_title .contents_txt {}
+main .collection .container .collection_wrap {display:flex; width:max-content; margin:0 auto; background:aqua;}
+main .collection .container .collection_wrap .collection_view {}
+main .collection .container .collection_wrap .collection_view .antioxidant {/* 항산화 */}
+main .collection .container .collection_wrap .collection_view .vegan {/* 비건 */ display:none;}
+main .collection .container .collection_wrap .collection_view .moist {/* 수분,보습 */ display:none;}
+main .collection .container .collection_wrap .collection_view .mild {/* 저자극,진정 */ display:none;}
+main .collection .container .collection_wrap .collection_view .view_box {/* 탭 공용 */ width:1240px; height:420px;}
+main .collection .container .collection_wrap .collection_view .view_box li {
+    position:relative; border-radius:10px; overflow:hidden; display:inline-block;
+    width:calc((1240px - 45px) / 4); margin-right:15px;
+}
+main .collection .container .collection_wrap .collection_view .view_box li:last-child {margin-right:0;}
+main .collection .container .collection_wrap .collection_view .view_box li:hover .collection_hover {opacity:1;}
+main .collection .container .collection_wrap .collection_view .view_box li img {}
+main .collection .container .collection_wrap .collection_view .view_box li .collection_hover {
+    opacity:0; background-color:rgba(41,38,22,0.45);
+    display:flex; flex-flow:column nowrap; justify-content:center;
+    position:absolute; top:0; left:0; width:100%; height:420px; padding:0 15px;
+}
+main .collection .container .collection_wrap .collection_view .view_box li .collection_hover .hover_name {
+    font-size:1.2rem; font-weight:600; margin-bottom:10px;
+}
+main .collection .container .collection_wrap .collection_view .view_box li .collection_hover p {
+    color:#fff;
+    line-height:1.5; letter-spacing:-0.02em; font-weight:300;
+}
+main .collection .container .collection_wrap .collection_list {display:inline-block; margin-left:50px;}
+main .collection .container .collection_wrap .collection_list ul {}
+main .collection .container .collection_wrap .collection_list ul li {text-align:left;}
+main .collection .container .collection_wrap .collection_list ul li * {letter-spacing:-0.02em;}
+main .collection .container .collection_wrap .collection_list ul li .crt_title {
+    font-size:1.125rem; color:#555;
+}
+main .collection .container .collection_wrap .collection_list ul li .list_active {/* 클릭 display 클래스 */
+    font-size:1.375rem; font-weight:700; line-height:1.5; color:#232323;
+}
+main .collection .container .collection_wrap .collection_list ul li .crt_title .crt_hover {opacity:0.5; position:relative; top:3px;} /* 화살표 물어보기 */
+main .collection .container .collection_wrap .collection_list ul li .crt_content {
+    width:300px; margin:30px 0 30px 50px; padding-left:30px; border-left:2px solid #b97e21; 
+}
+main .collection .container .collection_wrap .collection_list ul li .crt_content .crt_en {
+    font-size:1.375rem; font-weight:700; line-height:1.5; margin-bottom:15px; color:#b97e21;
+
+}
+main .collection .container .collection_wrap .collection_list ul li .crt_content p {
+    font-size:0.93rem; line-height:1.5;
+}
+/* =======================================★★★★★ 4열 New Product */
+main .new_product {}
+main .new_product .container {text-align:center;}
+main .new_product .container .contents_title {}
+main .new_product .container .contents_title .contents_title {}
+main .new_product .container .contents_title .contents_title .contents_name {}
+main .new_product .container .contents_title .contents_title .contents_menu {}
+main .new_product .container .contents_title .contents_title .contents_menu li {}
+main .new_product .container .contents_title .contents_title .contents_menu .active {}
+main .new_product .container .contents_title .contents_title .contents_menu .all {}
+main .new_product .container .contents_title .contents_title .contents_menu .make_up {}
+main .new_product .container .contents_title .contents_title .contents_menu .skincare {}
+main .new_product .container .np_box {}
+main .new_product .container .np_box .pb {}
+main .new_product .container .np_box .all {}
+main .new_product .container .np_box .makeup {}
+main .new_product .container .np_box .skincare {}
+main .new_product .container .np_box .pb .np {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide > .thum {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide > .thum img {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .title {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .title a {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .price {}
+main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .price del {}
+/* =======================================★★★★★ 5열 Home Try */
+main .home_try {
+    height:100vh;
+    background-image:url(../images/home_try_bg.png);
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+}
+main .home_try .container {height:100%; position:relative; display:flex;}
+main .home_try .container .home_try_title {align-self:center; text-align:center;}
+main .home_try .container .home_try_title > * {letter-spacing:-0.02em;}
+main .home_try .container .home_try_title .home_try_sub {font-size:1.125rem; font-weight:500;}
+main .home_try .container .home_try_title h3 {
+    font-size:4rem; font-family:"hankenBB","pretendard",sans-serif;
+    margin-top:15px;
+}
+main .home_try .container .home_try_title p {line-height:1.5; margin:30px 0;}
+main .home_try .container .home_try_title .view_more {}
+main .home_try .container .home_try_title .view_more img {}
+main .home_try .container .card_content {width:350px; display:flex; margin-left:135px;}
+main .home_try .container .card_content .card_row1 {}
+main .home_try .container .card_content .card_row2 {margin-left:50px; padding-top:130px;}
+main .home_try .container .card_content ul[class^=card] {/* row1, row2 공통 선택자 */}
+main .home_try .container .card_content ul[class^=card] .card {
+    border-radius:10px; background:#fff; padding:40px 30px; margin-bottom:50px;
+}
+main .home_try .container .card_content ul[class^=card] .card p {
+    font-size:1.375rem; line-height:1.3; text-align:center;
+}
+main .home_try .container .card_content ul[class^=card] .card .card_img {margin:25px 0; position:relative;}
+main .home_try .container .card_content ul[class^=card] .card .card_img img {}
+main .home_try .container .card_content ul[class^=card] .card .card_img .percent {
+    background:#232323; color:#fff; border-radius:50%; display:inline-block; width:50px; height:50px;
+    font-size:1.25rem; font-family:"gloockR","pretendard",sans-serif; padding:16px 0 0 8px;
+    position:absolute; top:10px; right:10px;
+}
+main .home_try .container .card_content ul[class^=card] .card .card_img .percent em {font-size:0.875rem; font-weight:200; color:#fff; margin-left:1px;}
+main .home_try .container .card_content ul[class^=card] .card .home_try_price {
+    width:200px; display:flex; flex-flow:row wrap; align-items:center; margin:0 auto;
+}
+main .home_try .container .card_content ul[class^=card] .card .home_try_price > * {letter-spacing:-0.02em;}
+main .home_try .container .card_content ul[class^=card] .card .home_try_price dt {font-size:1.125rem; width:80px;}
+main .home_try .container .card_content ul[class^=card] .card .home_try_price dd {
+    font-family:"hankenB","pretendard",sans-serif;
+    font-size:1.75rem; margin-left:20px;
+}
+main .home_try .container .card_content ul[class^=card] .card .home_try_price .service_txt,
+main .home_try .container .card_content ul[class^=card] .card .home_try_price .service_price {color:#b97e21; margin-top:10px;}
+main .home_try .container .ht_scroll {
+    height:max-content; position:absolute; bottom:0; right:-30px;
+}
+main .home_try .container .ht_scroll p {
+    transform:rotate(90deg);
+    float:left; color:#555;
+    font-size:0.9375rem; letter-spacing:-0.02em; font-family:"hankenB","pretendard",sans-serif;
+}
+main .home_try .container .ht_scroll p::before {
+    float:right; display:inline-block; content:''; width:10px; height:18px; position:relative; top:-3px;
+    background-image:url(../images/arrow_right.png);
+    background-position:center;
+}
+main .home_try .container .ht_scroll p::after {
+    float:right; display:inline-block; content:''; width:10px; height:18px; position:relative; top:-3px;
+    background-image:url(../images/arrow_right.png);
+    background-position:center; margin-left:5px;
+}
+/* =======================================★★★★★ 6열 이벤트 미니배너 */
+main .event_bnr {padding-top:160px;}
+main .event_bnr .container {}
+main .event_bnr .container .mini_bnr_box {display:flex; flex-flow:row nowrap; justify-content:space-around; gap:10px;}
+main .event_bnr .container .mini_bnr_box .mini_bnr {
+    flex:1; height:500px;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+main .event_bnr .container .mini_bnr_box .mini_bnr1 {background-image:url(../images/mini_bnr_001.jpg);}
+main .event_bnr .container .mini_bnr_box .mini_bnr2 {background-image:url(../images/mini_bnr_002.jpg);}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg {
+    display:flex; justify-content:space-between; 
+    background:rgba(255,255,255,0.7); padding:25px 20px;
+    position:absolute; left:0; bottom:0; width:100%;
+}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg ul {}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg ul li {letter-spacing:-0.02em;}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg ul .mini_title {
+    font-size:1.625rem; font-family:"hankenM","pretendard",sans-serif; margin-bottom:15px;
+}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg ul .mini_txt {
+    font-size:0.875rem; font-weight:500; line-height:1.5;
+}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg p {margin-top:auto;}
+main .event_bnr .container .mini_bnr_box .mini_bnr .txt_w_bg p img {}
+/* =======================================★★★★★ 7열 인스타그램 */
+main .instagram {}
+main .instagram .container {text-align:center;}
+main .instagram .container .contents_title {}
+main .instagram .container .contents_title .contents_name {}
+main .instagram .container .contents_title .contents_txt {}
+main .instagram .container .insta_thum {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main .instagram .container .insta_thum li {width:calc((1400px - (20px * 4)) / 5); margin-bottom:20px;}
+main .instagram .container .insta_thum li a {}
+main .instagram .container .insta_thum li a img {width:100%;}

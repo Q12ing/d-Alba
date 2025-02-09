@@ -22,7 +22,7 @@ line-height:1.5; letter-spacing:-0.02em;
 ### 정상가 (d) 18
 font-size:1.125rem; letter-spacing:-0.02em;
 ### 메뉴강조M (d) 18
-font-size:1.125rem; letter-spacing:-0.02em;
+font-size:1.125rem; font-weight:500; letter-spacing:-0.02em;
 ### 홈트라이가SB (d) 18
 font-size:1.125rem; font-weight:600; letter-spacing:-0.02em;
 ### 콜렉션메뉴 (d) 20
