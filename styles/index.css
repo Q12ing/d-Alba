@@ -21,9 +21,7 @@ main .contents_title .contents_menu li::after {
 }
 main .contents_title .contents_menu li:hover::after {transform:scale(1); transition:transform 0.3s;}
 main .contents_title .contents_menu li:hover {color:#232323;}
-main .contents_title .contents_menu .active {
-    border-bottom:2px solid #b97e21; 
-    /* border-bottom:2px solid #b97e21 위치를 after랑 어떻게 맞추지요*/}
+main .contents_title .contents_menu .active::after {}
 main .contents_title .contents_menu .all {}
 main .contents_title .contents_menu .make_up {margin:0 30px;}
 main .contents_title .contents_menu .skincare {}

@@ -23,7 +23,7 @@ mainDot.forEach((dot, index) => {
 
 
 /* best, new product swiper */
-function productSettings() {
+/* function productSettings() {
     return {
         autoplay:{
             delay:10000,
@@ -31,18 +31,62 @@ function productSettings() {
         loop:true,
         slidesPerView:4,
         spaceBetween:26
-    };
-}
-const bsAllSwiper = new Swiper('.bs_all_swiper',productSettings());
+    }; 
+} */
+/* const bsAllSwiper = new Swiper('.bs_all_swiper',productSettings());
 const bsMakeUpSwiper = new Swiper('.bs_makeup_swiper',productSettings());
 const bsSkincareSwiper = new Swiper('.bs_skincare_swiper',productSettings());
 const npAllSwiper = new Swiper('.np_all_swiper',productSettings());
 const npMakeUpSwiper = new Swiper('.np_makeup_swiper',productSettings());
 const npSkincareSwiper = new Swiper('.np_skincare_swiper',productSettings());
+ */
+const activeProgressBar = document.querySelectorAll('.active_progress_bar');
+const bsAllSwiper = new Swiper('.bs_all_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
+const bsMakeUpSwiper = new Swiper('.bs_makeup_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
+const bsSkincareSwiper = new Swiper('.bs_skincare_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
+const npAllSwiper = new Swiper('.np_all_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
+const npMakeUpSwiper = new Swiper('.np_makeup_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
+const npSkincareSwiper = new Swiper('.np_skincare_swiper',{
+    autoplay:{
+        delay:3000,
+    },
+    loop:true,
+    slidesPerView:4,
+    spaceBetween:26,
+});
 
-/* best, new product progress bar */
-const pbProgress = document.querySelectorAll ('.active_progress_bar');
-function progressBar() {
-    return {};
-}
-for(let i in pbProgress){console.log(i);}

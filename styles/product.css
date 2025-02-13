@@ -1,6 +1,6 @@
 main {}
-main .product_wrap {}
-main .product_wrap .container {width:1100px; margin:0 auto;}
+main .product_wrap {width:100%;}
+main .product_wrap .container {max-width:1100px; margin:0 auto;}
 main .product_wrap .product_container {
     margin-top:180px; display:flex;
 }
@@ -27,17 +27,18 @@ main .product_wrap .container .product_contents .info dt:nth-of-type(2) {margin:
 main .product_wrap .container .product_contents .info dd:nth-of-type(3) {position:relative; top:-5px;}
 main .product_wrap .container .product_contents .info dt {width:70px;}
 main .product_wrap .container .product_contents .info dd {width:calc(100% - 70px);}
-main .product_wrap .container .product_contents .info dd img {cursor:pointer; position:relative; top:3px;  margin-left:2px;}
+main .product_wrap .container .product_contents .info dd .schedule {cursor:pointer; position:relative; top:3px;  margin-left:2px;}
 main .product_wrap .container .product_contents .info dd .schedule_open {
-    display:none;
     width:max-content; position:absolute; top:27px; left:0px;
     background:#fff;
     color:#555; font-size:0.93rem; line-height:1.5; letter-spacing:-0.02em;
     padding:10px; border:1px solid #aaa; border-radius:5px;
 }
+main .product_wrap .container .product_contents .info dd .hide {display:none; !important;} /* 접었다 펼치기 */
 main .product_wrap .container .product_contents .order_contents {}
 main .product_wrap .container .product_contents .order_contents .select_contents {}
 main .product_wrap .container .product_contents .order_contents .select_contents #capacity {
+    cursor:pointer;
     font-size:0.93rem; letter-spacing:-0.02em;
     width:100%; padding:10px 12px; border:1px solid #232323; border-radius:3px;
     background-image:url(../images/arrow_down.png);
@@ -53,9 +54,9 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 }
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] p {font-size:0.93rem; letter-spacing:-0.02em;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] {display:flex;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .op_total {color:#555; position:relative; top:3px; margin-right:20px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .op_total {color:#555; position:relative; top:3px;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box {
-    border-radius:5px; overflow:hidden; border:1px solid #ccc; 
+    border-radius:5px; overflow:hidden; border:1px solid #ccc; margin:0 10px;
 }
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box input {
     order:0; border:1px solid #ccc; border-top:0; border-bottom:0; width:40px;
@@ -64,6 +65,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button img {position:relative; top:2px;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .minus{order:-1;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .plus{order:1;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] .close {cursor:pointer;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] .close img {position:relative; top:2px;}
 /* ================================================================================================================ */
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml {margin:15px 0;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml p {}
@@ -75,6 +78,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .minus {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .close {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .close img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml p {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num {}
@@ -85,6 +90,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .minus {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .close {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .close img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .order_price {
     margin-top:33px; padding-bottom:15px; overflow:hidden;
     border-bottom:1px solid #ccc;
@@ -102,7 +109,7 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .order_btn #buy_btn {background:#b97e21; color:#fff;}
 main .cart_open_bg {display:none;
     width:100%; height:100vh; background-color:rgba(0,0,0,0.3);
-    position:fixed; top:0; left:0;
+    position:fixed; top:0; left:0; z-index:999;
 }
 main .cart_open_bg .cart_container {
     width:700px; margin:200px auto 0; 
