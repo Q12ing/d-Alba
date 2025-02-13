@@ -62,8 +62,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 }
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button{}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button img {position:relative; top:2px;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box #minus{order:-1;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box #plus{order:1;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .minus{order:-1;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .plus{order:1;}
 /* ================================================================================================================ */
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml {margin:15px 0;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml p {}
@@ -73,8 +73,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box #op50ml_num {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button img {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box #minus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box #plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .plus {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml p {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num {}
@@ -83,8 +83,8 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box #op100ml_num {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button img {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box #minus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box #plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .plus {}
 main .product_wrap .container .product_contents .order_contents .select_contents .order_price {
     margin-top:33px; padding-bottom:15px; overflow:hidden;
     border-bottom:1px solid #ccc;
