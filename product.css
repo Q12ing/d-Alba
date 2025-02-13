@@ -1,0 +1,119 @@
+main {}
+main .product_wrap {}
+main .product_wrap .container {width:1100px; margin:0 auto;}
+main .product_wrap .product_container {
+    margin-top:180px; display:flex;
+}
+main .product_wrap .container .photo {margin-right:40px;}
+main .product_wrap .container .photo .big {margin-bottom:20px; width:550px;}
+main .product_wrap .container .photo .big img {width:100%;}
+main .product_wrap .container .photo .thumbnail {display:flex; justify-content:space-between;}
+main .product_wrap .container .photo .thumbnail a {display:block; width:75px;}
+main .product_wrap .container .photo .thumbnail a img {width:100%;}
+main .product_wrap .container .photo .thumbnail .active {}
+main .product_wrap .container .photo .thumbnail .active img {}
+main .product_wrap .container .product_contents {}
+main .product_wrap .container .product_contents .cord_share {margin-bottom:25px; display:flex; justify-content:space-between; align-items:center;}
+main .product_wrap .container .product_contents .cord_share .cord {font-size:0.93rem; letter-spacing:-0.02em; color:#555;}
+main .product_wrap .container .product_contents .cord_share .share {cursor:pointer;}
+main .product_wrap .container .product_contents .cord_share .share img {}
+main .product_wrap .container .product_contents > h1 {font-size:1.5rem; font-weight:600; letter-spacing:-0.02em;}
+main .product_wrap .container .product_contents > h2 {font-size:1.125rem; letter-spacing:-0.02em; margin:12px 0 25px;}
+main .product_wrap .container .product_contents .price {font-size:1.25rem; letter-spacing:-0.02em; margin-bottom:30px;}
+main .product_wrap .container .product_contents .descrip {height:70px; color:#555; font-size:0.93rem; line-height:1.5; letter-spacing:-0.02em;}
+main .product_wrap .container .product_contents .info {display:flex; flex-flow:row wrap; justify-content:space-between; margin-bottom:30px;}
+main .product_wrap .container .product_contents .info dd:nth-of-type(2),
+main .product_wrap .container .product_contents .info dt:nth-of-type(2) {margin:18px 0;}
+main .product_wrap .container .product_contents .info dd:nth-of-type(3) {position:relative; top:-5px;}
+main .product_wrap .container .product_contents .info dt {width:70px;}
+main .product_wrap .container .product_contents .info dd {width:calc(100% - 70px);}
+main .product_wrap .container .product_contents .info dd img {cursor:pointer; position:relative; top:3px;  margin-left:2px;}
+main .product_wrap .container .product_contents .info dd .schedule_open {
+    display:none;
+    width:max-content; position:absolute; top:27px; left:0px;
+    background:#fff;
+    color:#555; font-size:0.93rem; line-height:1.5; letter-spacing:-0.02em;
+    padding:10px; border:1px solid #aaa; border-radius:5px;
+}
+main .product_wrap .container .product_contents .order_contents {}
+main .product_wrap .container .product_contents .order_contents .select_contents {}
+main .product_wrap .container .product_contents .order_contents .select_contents #capacity {
+    font-size:0.93rem; letter-spacing:-0.02em;
+    width:100%; padding:10px 12px; border:1px solid #232323; border-radius:3px;
+    background-image:url(../images/arrow_down.png);
+    background-repeat:no-repeat;
+    background-position:98% center;
+}
+main .product_wrap .container .product_contents .order_contents .select_contents #capacity option {font-size:0.93rem; letter-spacing:-0.02em;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container {}
+/* ================================================================================================================= 옵션 공통 선택자 */
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] {
+    background:#f5f5f5; padding:10px 12px; border-radius:5px;
+    display:flex; justify-content:space-between; align-items:center;
+}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] p {font-size:0.93rem; letter-spacing:-0.02em;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] {display:flex;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .op_total {color:#555; position:relative; top:3px; margin-right:20px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box {
+    border-radius:5px; overflow:hidden; border:1px solid #ccc; 
+}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box input {
+    order:0; border:1px solid #ccc; border-top:0; border-bottom:0; width:40px;
+}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button{}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button img {position:relative; top:2px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .minus{order:-1;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .plus{order:1;}
+/* ================================================================================================================ */
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml {margin:15px 0;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml p {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .op_total {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box #op50ml_num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml p {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .op_total {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box{}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box #op100ml_num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_price {
+    margin-top:33px; padding-bottom:15px; overflow:hidden;
+    border-bottom:1px solid #ccc;
+}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_price p {font-size:1.125rem; font-weight:500; letter-spacing:-0.02em; float:left;}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_price p:nth-child(2) {float:right;}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_price p .total_price {margin-left:4px; font-size:1.5rem; font-weight:600; letter-spacing:-0.02em;}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_btn {margin-top:20px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_btn button {
+    width:calc((100% - 20px) / 2); padding:18px;
+    font-size:1.125rem; font-weight:600; letter-spacing:-0.02em;
+    border:1px solid #b97e21; border-radius:5px;
+}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_btn #cart_btn {margin-right:15px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .order_btn #buy_btn {background:#b97e21; color:#fff;}
+main .cart_open_bg {display:none;
+    width:100%; height:100vh; background-color:rgba(0,0,0,0.3);
+    position:fixed; top:0; left:0;
+}
+main .cart_open_bg .cart_container {
+    width:700px; margin:200px auto 0; 
+    background-color:#fff; border-radius:10px;
+    padding:50px 0; text-align:center;}
+main .cart_open_bg .cart_container p {font-size:1.15rem; font-weight:400;}
+main .cart_open_bg .cart_container .link {margin-top:20px;}
+main .cart_open_bg .cart_container .link a {
+    padding:15px 25px; border-radius:5px; border:1px solid #b97e21;
+    display:inline-block; 
+}
+main .cart_open_bg .cart_container .link a:nth-child(1) {margin-right:10px;}
+main .cart_open_bg .cart_container .link a:nth-child(2) {background:#b97e21; color:#fff;}
+
