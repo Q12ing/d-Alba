@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화이트 트러플 퍼스트 아로마틱 스프레이 세럼 | d'Alba </title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="shortcut icon" href="./images/dalba_favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="./images/dalba_favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="./images/logo.png" alt="달바"></h1>
+        <div class="nav_wrap">
+            <nav>
+                <p class="full_depth">
+                    <img src="./images/full_depth.png" alt="메뉴 전체보기">
+                    <!-- 메뉴 전체보기 들어올 자리 -->
+                </p>
+                <ul>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Home Try</a></li>
+                </ul>
+            </nav>
+            <div class="m_nav">
+                <a href="#"><img src="./images/wish.png" alt="위시리스트"></a>
+                <a href="#"><img src="./images/search.png" alt="검색하기"></a>
+                <a href="#"><img src="./images/mypage.png" alt="마이페이지"></a>
+                <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product_wrap"><!-- 풀컨텐츠 -->
+            <div class="container product_container"><!-- 뷰컨텐츠 w1100 -->
+                <div class="photo">
+                    <div class="big">
+                        <img src="./images/b01.jpg" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <a href="#" class="active"><img src="./images/s01.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s02.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s03.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s04.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s05.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s06.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="product_contents">
+                    <div class="cord_share">
+                        <p class="cord">#비타세럼토너 #결광토너 #100시간보습 #비타생기 #비타케어</p>
+                        <p class="share"><img src="./images/share.png" alt=""></p>
+                    </div>
+                    <h1>화이트 트러플 퍼스트 아로마틱 스프레이 세럼</h1>
+                    <h2>White Truffle First Aromatic Spray Serum</h2>
+                    <p class="price">KRW 32,000</p>
+                    <p class="descrip">미백 기능성 나이아신아마이드 2% 베이스에 글루타티온, 비타민C(아스코빅애씨드)의 시너지로 생기 잃은 칙칙한 피부를 밝게 화이트닝</p>
+                    <dl class="info">
+                        <dt>용량</dt>
+                        <dd>100ml</dd>
+                        <dt>배송비</dt>
+                        <dd>2,500원(30,000원 이상 무료배송)</dd>
+                        <dt>배송기간</dt>
+                        <dd>약 2~3일 소요<img src="./images/info.png" alt="">
+                            <div class="schedule_open">
+                                택배사 사정 혹은 산간지역에 따라 1~2일 정도 더 소요될 수 있습니다.
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="order_contents">
+                        <div class="select_contents">
+                            <select name="capacity" id="capacity">
+                                <option value="">선택(필수)</option>
+                                <option value="50ml">50ml(-KRW 5,000)</option>
+                                <option value="100ml">100ml</option>
+                            </select>
+                            <div class="op_container">
+                                <div class="op50ml">
+                                    <p>50ml (-KRW 5,000)</p>
+                                    <div class="num">
+                                        <p class="op_total">27,000</p>
+                                        <div class="num_box">
+                                            <button type="button" id="minus"><img src="./images/minus.png" alt=""></button>
+                                            <input type="number" name="op50ml_num" id="op50ml_num" value="1">
+                                            <button type="button" id="plus"><img src="./images/plus.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="op100ml">
+                                    <div class="op100ml_price">
+                                        <p>100ml</p>
+                                    </div>
+                                    <div class="num">
+                                        <p class="op_total">32,000</p>
+                                        <div class="num_box">
+                                            <button type="button" id="minus"><img src="./images/minus.png" alt=""></button>
+                                            <input type="number" name="op100ml_num" id="op100ml_num" value="1">
+                                            <button type="button" id="plus"><img src="./images/plus.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_price">
+                                <p>상품금액합계</p>
+                                <p>KRW<em class="total_price">86000</em></p>
+                            </div>
+                            <div class="order_btn">
+                                <button type="button" id="cart_btn">장바구니</button>
+                                <button type="button" id="buy_btn">바로구매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart_open_bg">
+            <div class="cart_container">
+                <p>장바구니에 담았습니다.</p>
+                <div class="link">
+                    <a href="#">쇼핑 계속하기</a>
+                    <a href="#">장바구니 가기</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="ft_top">
+                <li>주식회사 달바글로벌</li>
+                <li>CEO 반성연</li>
+                <li>개인정보책임 유명한</li>
+                <li>사업자등록번호 840-88-00333</li>
+            </ul>
+            <div class="ft_bottom">
+                <address>
+                    <p>통신판매업 신고번호 : 제 2016-서울마포-0721호 | 통신판매업자 신원정보 확인</p>
+                    <p>서울특별시 마포구 마포대로 78, 12층 (도화동, 자람빌딩) (04031)</p>
+                    <p>고객상담팀 :  02-332-7727 (상담시간 월-금 : 10:00 - 17:00, 주말/공휴일 휴무)</p>
+                    <p>Email : dalba@dalba.com (24시간 접수 가능)</p>
+                    <p>© Bmonument.</p>
+                </address>
+                <div class="ft_r">
+                    <div class="ft_sns">
+                        <a href="#"><img src="./images/instagram.png" alt=""></a>
+                        <a href="#"><img src="./images/youtube.png" alt=""></a>
+                        <a href="#"><img src="./images/facebook.png" alt=""></a>
+                    </div>
+                    <p class="ft_logo"><img src="./images/logo.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

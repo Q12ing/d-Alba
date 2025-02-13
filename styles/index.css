@@ -21,7 +21,9 @@ main .contents_title .contents_menu li::after {
 }
 main .contents_title .contents_menu li:hover::after {transform:scale(1); transition:transform 0.3s;}
 main .contents_title .contents_menu li:hover {color:#232323;}
-main .contents_title .contents_menu .active {/* border-bottom:2px solid #b97e21 위치를 after랑 어떻게 맞추지요*/}
+main .contents_title .contents_menu .active {
+    border-bottom:2px solid #b97e21; 
+    /* border-bottom:2px solid #b97e21 위치를 after랑 어떻게 맞추지요*/}
 main .contents_title .contents_menu .all {}
 main .contents_title .contents_menu .make_up {margin:0 30px;}
 main .contents_title .contents_menu .skincare {}
@@ -37,16 +39,16 @@ main .container .product_box .pb {} /* swiper 부모+프로그레스 wrap */
 main .container .product_box .all {} /* 개별 swiper 부모+프로그레스 wrap */
 main .container .product_box .makeup {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
 main .container .product_box .skincare {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
-main .container .product_box .pb .swiper {width:100%; height:500px;} /* swiper 부모 */
+main .container .product_box .pb .swiper {width:100%;} /* swiper 부모 */
 main .container .product_box .pb .swiper .swiper-wrapper {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum {
     margin-bottom:20px; border-radius:10px; display:block;
 }
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum:hover {
-    background:rgba(0,0,0,0.05); /* 강사님에게 여쭤보기 (사이트 창을 줄이면 선택되는 영역이 이상함) */
+    background:rgba(0,0,0,0.05);
 }
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum img {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum img {width:100%;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {text-align:left; margin-top:20px;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product * {letter-spacing:-0.02em;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {margin-bottom:15px;}
@@ -177,16 +179,17 @@ main .collection .container .collection_wrap .collection_view .view_box li {
 }
 main .collection .container .collection_wrap .collection_view .view_box li:last-child {margin-right:0;}
 main .collection .container .collection_wrap .collection_view .view_box li:hover .collection_hover {opacity:1;}
-main .collection .container .collection_wrap .collection_view .view_box li img {}
-main .collection .container .collection_wrap .collection_view .view_box li .collection_hover {
+main .collection .container .collection_wrap .collection_view .view_box li a {}
+main .collection .container .collection_wrap .collection_view .view_box li a img {}
+main .collection .container .collection_wrap .collection_view .view_box li a .collection_hover {
     opacity:0; background-color:rgba(41,38,22,0.45);
     display:flex; flex-flow:column nowrap; justify-content:center;
     position:absolute; top:0; left:0; width:100%; height:420px; padding:0 15px;
 }
-main .collection .container .collection_wrap .collection_view .view_box li .collection_hover .hover_name {
+main .collection .container .collection_wrap .collection_view .view_box li a .collection_hover .hover_name {
     font-size:1.2rem; font-weight:600; margin-bottom:10px;
 }
-main .collection .container .collection_wrap .collection_view .view_box li .collection_hover p {
+main .collection .container .collection_wrap .collection_view .view_box li a .collection_hover p {
     color:#fff;
     line-height:1.5; letter-spacing:-0.02em; font-weight:300;
 }
