@@ -13,15 +13,11 @@ main .contents_title .contents_name {
 main .contents_title .contents_txt {color:#555}
 main .contents_title .contents_menu {}
 main .contents_title .contents_menu li {
-    color:#555; display:inline-block; cursor:pointer;
+    color:#555; display:inline-block; cursor:pointer; line-height:30px;
+    border-bottom:2px solid #fff; transition:color 0.3s, border 0.3s;
 }
-main .contents_title .contents_menu li::after {
-    content:''; display:block; background:#b97e21; width:100%; height:2px; margin-top:5px;
-    transform:scale(0);
-}
-main .contents_title .contents_menu li:hover::after {transform:scale(1); transition:transform 0.3s;}
-main .contents_title .contents_menu li:hover {color:#232323;}
-main .contents_title .contents_menu .active::after {}
+main .contents_title .contents_menu li:hover {border-bottom:2px solid #b97e21;}
+main .contents_title .contents_menu .active {border-bottom:2px solid #b97e21; color:#232323;}
 main .contents_title .contents_menu .all {}
 main .contents_title .contents_menu .make_up {margin:0 30px;}
 main .contents_title .contents_menu .skincare {}
@@ -53,11 +49,11 @@ main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product 
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title a {font-weight:500;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {font-size:0.875rem; font-weight:300; opacity:0.5;}
-main .pb .progress_more {background:yellow; display:flex; justify-content:space-between; align-items:center; margin-top:60px;}
-main .pb .progress_more .progress_bar {width:1350px; height:2px; background:#ccc;}
-main .pb .progress_more .progress_bar .active_progress_bar {background:#b97e21;}
-main .pb .progress_more a {}
-main .pb .progress_more a img {position:relative; top:2px;}
+main .pb .progress_more {position:relative; margin-top:60px;}
+main .pb .progress_more .swiper-scrollbar {width:90%; height:2px; background:#ccc; position:relative; top:-11px;}
+main .pb .progress_more .swiper-scrollbar-drag {background:#b97e21;}
+main .pb .progress_more a {position:absolute; top:-22px; right:70px;}
+main .pb .progress_more a img {}
 /* =======================================★★★★★ 메인배너 */
 main .main_bnr {position:relative;}
 main .main_bnr .main_swiper {
@@ -133,7 +129,7 @@ main .best_seller .container .bs_box .pb .bs_all_swiper .swiper-slide .product .
 main .brand_story {width:100%; position:relative;}
 main .brand_story video {
     width:730px; height:405px;
-    position:absolute; top:180px; left:297px; z-index:490;
+    position:absolute; top:175px; left:297px; z-index:490;
 }
 main .brand_story .brand_content {
     height:600px;
@@ -160,11 +156,11 @@ main .brand_story .brand_content .brand_content_txt .view_more {margin-top:45px;
 main .brand_story .brand_content .brand_content_txt .view_more img {}
 /* =======================================★★★★★ 3열 Collection */
 main .collection {background:#f5f5f5; }
-main .collection .container {max-width:100%; text-align:center; background-color:yellow;}
+main .collection .container {max-width:100%; text-align:center;}
 main .collection .container .contents_title {}
 main .collection .container .contents_title .contents_name {}
 main .collection .container .contents_title .contents_txt {}
-main .collection .container .collection_wrap {display:flex; width:max-content; margin:0 auto; background:aqua;}
+main .collection .container .collection_wrap {display:flex; width:max-content; margin:0 auto;}
 main .collection .container .collection_wrap .collection_view {}
 main .collection .container .collection_wrap .collection_view .antioxidant {/* 항산화 */}
 main .collection .container .collection_wrap .collection_view .vegan {/* 비건 */ display:none;}
@@ -193,15 +189,16 @@ main .collection .container .collection_wrap .collection_view .view_box li a .co
 }
 main .collection .container .collection_wrap .collection_list {display:inline-block; margin-left:50px;}
 main .collection .container .collection_wrap .collection_list ul {}
-main .collection .container .collection_wrap .collection_list ul li {text-align:left;}
+main .collection .container .collection_wrap .collection_list ul li {text-align:left; margin:45px;}
+main .collection .container .collection_wrap .collection_list ul li:first-child {margin-top:0;}
 main .collection .container .collection_wrap .collection_list ul li * {letter-spacing:-0.02em;}
 main .collection .container .collection_wrap .collection_list ul li .crt_title {
-    font-size:1.125rem; color:#555;
+    font-size:1.125rem; color:#555; cursor:pointer;
 }
 main .collection .container .collection_wrap .collection_list ul li .list_active {/* 클릭 display 클래스 */
-    font-size:1.375rem; font-weight:700; line-height:1.5; color:#232323;
+    font-size:1.25rem; font-weight:600; line-height:1.5; color:#232323;
 }
-main .collection .container .collection_wrap .collection_list ul li .crt_title .crt_hover {opacity:0.5; position:relative; top:3px;} /* 화살표 물어보기 */
+main .collection .container .collection_wrap .collection_list ul li .crt_title .crt_hover {opacity:0.5; position:relative; top:3px;}
 main .collection .container .collection_wrap .collection_list ul li .crt_content {
     width:300px; margin:30px 0 30px 50px; padding-left:30px; border-left:2px solid #b97e21; 
 }
@@ -240,14 +237,23 @@ main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .
 main .new_product .container .np_box .pb .np_all_swiper .swiper-slide .product .price del {}
 /* =======================================★★★★★ 5열 Home Try */
 main .home_try {
-    height:100vh;
     background-image:url(../images/home_try_bg.png);
     background-size:cover;
     background-position:center;
-    overflow:hidden;
 }
-main .home_try .container {height:100%; position:relative; display:flex;}
-main .home_try .container .home_try_title {align-self:center; text-align:center;}
+main .home_try .container {
+    display:flex;
+    height:auto; /* 높이를 자동으로 조절 */
+    min-height: 100vh; /* 최소 높이 유지 */
+}
+main .home_try .container .home_try_title {
+    position:sticky;
+    margin-bottom:300px;
+    margin-top:300px;
+    text-align:center;;
+    top:300px;
+    height:max-content;
+}
 main .home_try .container .home_try_title > * {letter-spacing:-0.02em;}
 main .home_try .container .home_try_title .home_try_sub {font-size:1.125rem; font-weight:500;}
 main .home_try .container .home_try_title h3 {
@@ -257,12 +263,12 @@ main .home_try .container .home_try_title h3 {
 main .home_try .container .home_try_title p {line-height:1.5; margin:30px 0;}
 main .home_try .container .home_try_title .view_more {}
 main .home_try .container .home_try_title .view_more img {}
-main .home_try .container .card_content {width:350px; display:flex; margin-left:135px;}
+main .home_try .container .card_content {width:350px; display:flex; margin-left:135px; position:sticky; top:100px;}
 main .home_try .container .card_content .card_row1 {}
 main .home_try .container .card_content .card_row2 {margin-left:50px; padding-top:130px;}
 main .home_try .container .card_content ul[class^=card] {/* row1, row2 공통 선택자 */}
 main .home_try .container .card_content ul[class^=card] .card {
-    border-radius:10px; background:#fff; padding:40px 30px; margin-bottom:50px;
+    border-radius:10px; background:#fff; padding:40px 30px; margin-bottom:50px; 
 }
 main .home_try .container .card_content ul[class^=card] .card p {
     font-size:1.375rem; line-height:1.3; text-align:center;
@@ -286,24 +292,6 @@ main .home_try .container .card_content ul[class^=card] .card .home_try_price dd
 }
 main .home_try .container .card_content ul[class^=card] .card .home_try_price .service_txt,
 main .home_try .container .card_content ul[class^=card] .card .home_try_price .service_price {color:#b97e21; margin-top:10px;}
-main .home_try .container .ht_scroll {
-    height:max-content; position:absolute; bottom:0; right:-30px;
-}
-main .home_try .container .ht_scroll p {
-    transform:rotate(90deg);
-    float:left; color:#555;
-    font-size:0.9375rem; letter-spacing:-0.02em; font-family:"hankenB","pretendard",sans-serif;
-}
-main .home_try .container .ht_scroll p::before {
-    float:right; display:inline-block; content:''; width:10px; height:18px; position:relative; top:-3px;
-    background-image:url(../images/arrow_right.png);
-    background-position:center;
-}
-main .home_try .container .ht_scroll p::after {
-    float:right; display:inline-block; content:''; width:10px; height:18px; position:relative; top:-3px;
-    background-image:url(../images/arrow_right.png);
-    background-position:center; margin-left:5px;
-}
 /* =======================================★★★★★ 6열 이벤트 미니배너 */
 main .event_bnr {padding-top:160px;}
 main .event_bnr .container {}
@@ -338,6 +326,7 @@ main .instagram .container .contents_title {}
 main .instagram .container .contents_title .contents_name {}
 main .instagram .container .contents_title .contents_txt {}
 main .instagram .container .insta_thum {display:flex; flex-flow:row wrap; justify-content:space-between;}
-main .instagram .container .insta_thum li {width:calc((1400px - (20px * 4)) / 5); margin-bottom:20px;}
+main .instagram .container .insta_thum li {width:calc((1400px - (20px * 4)) / 5); margin-bottom:20px; overflow:hidden;}
 main .instagram .container .insta_thum li a {}
-main .instagram .container .insta_thum li a img {width:100%;}
+main .instagram .container .insta_thum li a img {width:100%; transition:transform 0.4s;}
+main .instagram .container .insta_thum li a img:hover {transform:scale(1.05);}
