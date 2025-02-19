@@ -2,7 +2,7 @@
 const mainDot = document.querySelectorAll('.main_bnr .main_dot li');
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
-        delay:3000,
+        delay:3500,
     },
     loop:true,
     effect:'fade',
