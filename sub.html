@@ -13,209 +13,253 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script/common.js" defer></script>
     <script src="./script/sub.js" defer></script>
 </head>
 <body>
-    <body>
-        <header>
-            <h1><a href="./index.html"><img src="./images/logo.png" alt="달바"></a></h1>
-            <div class="nav_wrap">
-                <nav>
-                    <p class="full_depth">
-                        <img src="./images/full_depth.png" alt="메뉴 전체보기">
-                        <!-- 메뉴 전체보기 들어올 자리 -->
-                    </p>
-                    <ul>
-                        <li><a href="./sub.html">Story</a></li>
-                        <li><a href="./sub.html">Collection</a></li>
-                        <li><a href="./sub.html">Product</a></li>
-                        <li><a href="./sub.html">Home Try</a></li>
-                    </ul>
-                </nav>
-                <div class="m_nav">
-                    <a href="#"><img src="./images/wish.png" alt="위시리스트"></a>
-                    <a href="#"><img src="./images/search.png" alt="검색하기"></a>
-                    <a href="#"><img src="./images/mypage.png" alt="마이페이지"></a>
-                    <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="sub_wrap"><!-- 전체 너비 -->
-                <div class="category_bnr">
-                    <p class="category_title">전체보기</p>
-                </div>
-                <div class="container"> <!-- 컨텐츠 너비 w1400 -->
-                    <ul class="category_btn">
-                        <li class="active"><a href="#">전체보기</a></li>
-                        <li><a href="#">베스트</a></li>
-                        <li><a href="#">달바x닥터지유마켓</a></li>
-                        <li><a href="#">세럼·토너·앰플</a></li>
-                        <li><a href="#">선크림</a></li>
-                        <li><a href="#">디바이스</a></li>
-                        <li><a href="#">마스크</a></li>
-                        <li><a href="#">메이크업</a></li>
-                        <li><a href="#">로션·크림·아이크림</a></li>
-                        <li><a href="#">헤어·바디</a></li>
-                        <li><a href="#">비거너리</a></li>
-                        <li><a href="#">프래그런스</a></li>
-                        <li><a href="#">맨즈케어</a></li>
-                    </ul>
-                    <div class="quantity_Sequence">
-                        <p class="quantity"><span class="category_name">전체</span> 총 <span class="num">126</span>개</p>
-                        <select name="sequence" id="sequence">
-                            <option value="신상품순">신상품 순</option>
-                            <option value="베스트순">베스트 순</option>
-                            <option value="누적판매순">누적판매 순</option>
-                            <option value="낮은가격순">낮은가격 순</option>
-                            <option value="높은가격순">높은가격 순</option>
-                        </select>
-                    </div>
-                    <ul class="product_list">
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_001.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">워터풀 톤업 선크림</a></p>
-                                <p class="price">KRW 26,000 <del>30,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_002.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">글로우 핏 세럼 커버 쿠션</a></p>
-                                <p class="price">KRW 32,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_003.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">화이트 트러플 퍼스트 아로마틱 스프레이 세럼</a></p>
-                                <p class="price">KRW 42,000 <del>46,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_004.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">프로페셔널 리페어링 헤어 퍼퓸 세럼</a></p>
-                                <p class="price">KRW 18,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="thum"><img src="./images/np_all_001.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">플로라 앤 머스키 시트러스 아로마틱 디퓨저</a></p>
-                                <p class="price">KRW 36,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="thum"><img src="./images/np_all_002.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">데일리 마일드 시카 카밍 패드</a></p>
-                                <p class="price">KRW 32,000 <del>38,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="thum"><img src="./images/np_all_003.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">에어핏 실키 앤 메이크업 픽서</a></p>
-                                <p class="price">KRW 26,000 <del>30,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="thum"><img src="./images/np_all_004.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">밸런싱 비건 마일드 클렌저</a></p>
-                                <p class="price">KRW 28,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_skincare_001.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">밸런싱 수딩 앤 카밍 비건 크림</a></p>
-                                <p class="price">KRW 31,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_skincare_002.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">퓨어 비타민씨 37% 프리미엄 캡슐 6p</a></p>
-                                <p class="price">KRW 24,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_skincare_003.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">화이트 트러플 데일리 젤 클렌저</a></p>
-                                <p class="price">KRW 32,000 <del>38,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_skincare_004.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">화이트 트러플 엑스트라 포밍 스킨 크림</a></p>
-                                <p class="price">KRW 36,000</p>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_001.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">워터풀 톤업 선크림</a></p>
-                                <p class="price">KRW 26,000 <del>30,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_002.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">글로우 핏 세럼 커버 쿠션</a></p>
-                                <p class="price">KRW 32,000</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_003.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">화이트 트러플 퍼스트 아로마틱 스프레이 세럼</a></p>
-                                <p class="price">KRW 42,000 <del>46,000</del></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./product.html" class="thum"><img src="./images/bs_all_004.png" alt=""></a>
-                            <div class="product">
-                                <p class="title"><a href="./product.html">프로페셔널 리페어링 헤어 퍼퓸 세럼</a></p>
-                                <p class="price">KRW 18,000</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="more_product">
-                        <a href="#">더 보기 <img src="./images/arrow_down.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="container">
-                <ul class="ft_top">
-                    <li>주식회사 달바글로벌</li>
-                    <li>CEO 반성연</li>
-                    <li>개인정보책임 유명한</li>
-                    <li>사업자등록번호 840-88-00333</li>
+    <header>
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="달바"></a></h1>
+        <div class="nav_wrap">
+            <nav>
+                <ul>
+                    <li class="menu"><a href="./sub.html">Story</a></li>
+                    <li class="menu"><a href="./sub.html">Collection</a></li>
+                    <li class="menu"><a href="./sub.html">Product</a></li>
+                    <li class="menu"><a href="./sub.html">Home Try</a></li>
                 </ul>
-                <div class="ft_bottom">
-                    <address>
-                        <p>통신판매업 신고번호 : 제 2016-서울마포-0721호 | 통신판매업자 신원정보 확인</p>
-                        <p>서울특별시 마포구 마포대로 78, 12층 (도화동, 자람빌딩) (04031)</p>
-                        <p>고객상담팀 :  02-332-7727 (상담시간 월-금 : 10:00 - 17:00, 주말/공휴일 휴무)</p>
-                        <p>Email : dalba@dalba.com (24시간 접수 가능)</p>
-                        <p>© Bmonument.</p>
-                    </address>
-                    <div class="ft_r">
-                        <div class="ft_sns">
-                            <a href="#"><img src="./images/instagram.png" alt=""></a>
-                            <a href="#"><img src="./images/youtube.png" alt=""></a>
-                            <a href="#"><img src="./images/facebook.png" alt=""></a>
+                <div class="depth_menu">
+                    <div class="depth_container"> <!-- 컨텐츠 사이즈 w1400 -->
+                        <ul class="depth_category">
+                            <li class="depth_story"><a href="./sub.html">Story</a>
+                                <ul>
+                                    <li><a href="./sub.html">달바 스토리</a></li>
+                                    <li><a href="./sub.html">화이트 트러플</a></li>
+                                    <li><a href="./sub.html">제품검증과 비건</a></li>
+                                    <li><a href="./sub.html">굿즈 & 캠페인</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth_collection"><a href="./sub.html">Collection</a>
+                                <ul>
+                                    <li><a href="././sub.html">항산화 컬렉션</a></li>
+                                    <li><a href="./sub.html">비건 컬렉션</a></li>
+                                    <li><a href="./sub.html">수분·보습 컬렉션</a></li>
+                                    <li><a href="./sub.html">저자극·진정 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li class="product"><a href="./sub.html">Product</a>
+                                <ul>
+                                    <li><a href="./sub.html">전체보기</a></li>
+                                    <li><a href="./sub.html">베스트</a></li>
+                                    <li><a href="./sub.html">달바x닥터지유마켓</a></li>
+                                    <li><a href="./sub.html">로션·크림·아이크림</a></li>
+                                    <li><a href="./sub.html">세럼·토너·앰플</a></li>
+                                    <li><a href="./sub.html">헤어·바디</a></li>
+                                    <li><a href="./sub.html">선크림</a></li>
+                                    <li><a href="./sub.html">클렌징</a></li>
+                                    <li><a href="./sub.html">디바이스</a></li>
+                                    <li><a href="./sub.html">비거너리</a></li>
+                                    <li><a href="./sub.html">마스크</a></li>
+                                    <li><a href="./sub.html">프래그런스</a></li>
+                                    <li><a href="./sub.html">메이크업</a></li>
+                                    <li><a href="./sub.html">맨즈케어</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth_story"><a href="./sub.html">Home Try</a>
+                                <ul>
+                                    <li><a href="./sub.html">홈트라이</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="depth_bnr">
+                            <img src="./images/tab_bnr.jpg" alt="">
                         </div>
-                        <p class="ft_logo"><img src="./images/logo.png" alt=""></p>
                     </div>
                 </div>
+            </nav>
+            <div class="m_nav">
+                <a href=""><img src="./images/wish.png" alt="위시리스트"></a>
+                <a href="#"><img src="./images/search.png" alt="검색하기"></a>
+                <a href="#"><img src="./images/mypage.png" alt="마이페이지"></a>
+                <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
             </div>
-        </footer>
+        </div>
+    </header>
+    <main>
+        <div class="sub_wrap"><!-- 전체 너비 -->
+            <div class="category_bnr">
+                <p class="category_title">Product</p>
+            </div>
+            <div class="container"> <!-- 컨텐츠 너비 w1400 -->
+                <ul class="category_btn">
+                    <li class="active"><a href="#">전체보기</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">달바x닥터지유마켓</a></li>
+                    <li><a href="#">세럼·토너·앰플</a></li>
+                    <li><a href="#">선크림</a></li>
+                    <li><a href="#">디바이스</a></li>
+                    <li><a href="#">마스크</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">로션·크림·아이크림</a></li>
+                    <li><a href="#">헤어·바디</a></li>
+                    <li><a href="#">비거너리</a></li>
+                    <li><a href="#">프래그런스</a></li>
+                    <li><a href="#">맨즈케어</a></li>
+                </ul>
+                <div class="quantity_Sequence">
+                    <p class="quantity"><span class="category_name">전체</span> 총 <span class="num">126</span>개</p>
+                    <select name="sequence" id="sequence">
+                        <option value="신상품순">신상품 순</option>
+                        <option value="베스트순">베스트 순</option>
+                        <option value="누적판매순">누적판매 순</option>
+                        <option value="낮은가격순">낮은가격 순</option>
+                        <option value="높은가격순">높은가격 순</option>
+                    </select>
+                </div>
+                <ul class="product_list">
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_001.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">워터풀 톤업 선크림</a></p>
+                            <p class="price">KRW 26,000 <del>30,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_002.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">글로우 핏 세럼 커버 쿠션</a></p>
+                            <p class="price">KRW 32,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_003.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">화이트 트러플 퍼스트 아로마틱 스프레이 세럼</a></p>
+                            <p class="price">KRW 42,000 <del>46,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_004.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">프로페셔널 리페어링 헤어 퍼퓸 세럼</a></p>
+                            <p class="price">KRW 18,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="thum"><img src="./images/np_all_001.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">플로라 앤 머스키 시트러스 아로마틱 디퓨저</a></p>
+                            <p class="price">KRW 36,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="thum"><img src="./images/np_all_002.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">데일리 마일드 시카 카밍 패드</a></p>
+                            <p class="price">KRW 32,000 <del>38,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="thum"><img src="./images/np_all_003.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">에어핏 실키 앤 메이크업 픽서</a></p>
+                            <p class="price">KRW 26,000 <del>30,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="thum"><img src="./images/np_all_004.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">밸런싱 비건 마일드 클렌저</a></p>
+                            <p class="price">KRW 28,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_skincare_001.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">밸런싱 수딩 앤 카밍 비건 크림</a></p>
+                            <p class="price">KRW 31,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_skincare_002.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">퓨어 비타민씨 37% 프리미엄 캡슐 6p</a></p>
+                            <p class="price">KRW 24,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_skincare_003.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">화이트 트러플 데일리 젤 클렌저</a></p>
+                            <p class="price">KRW 32,000 <del>38,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_skincare_004.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">화이트 트러플 엑스트라 포밍 스킨 크림</a></p>
+                            <p class="price">KRW 36,000</p>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_001.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">워터풀 톤업 선크림</a></p>
+                            <p class="price">KRW 26,000 <del>30,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_002.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">글로우 핏 세럼 커버 쿠션</a></p>
+                            <p class="price">KRW 32,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_003.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">화이트 트러플 퍼스트 아로마틱 스프레이 세럼</a></p>
+                            <p class="price">KRW 42,000 <del>46,000</del></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./detail.html" class="thum"><img src="./images/bs_all_004.png" alt=""></a>
+                        <div class="product">
+                            <p class="title"><a href="./detail.html">프로페셔널 리페어링 헤어 퍼퓸 세럼</a></p>
+                            <p class="price">KRW 18,000</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_product">
+                    <a href="#">더 보기 <img src="./images/arrow_down.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="ft_top">
+                <li>주식회사 달바글로벌</li>
+                <li>CEO 반성연</li>
+                <li>개인정보책임 유명한</li>
+                <li>사업자등록번호 840-88-00333</li>
+            </ul>
+            <div class="ft_bottom">
+                <address>
+                    <p>통신판매업 신고번호 : 제 2016-서울마포-0721호 | 통신판매업자 신원정보 확인</p>
+                    <p>서울특별시 마포구 마포대로 78, 12층 (도화동, 자람빌딩) (04031)</p>
+                    <p>고객상담팀 :  02-332-7727 (상담시간 월-금 : 10:00 - 17:00, 주말/공휴일 휴무)</p>
+                    <p>Email : dalba@dalba.com (24시간 접수 가능)</p>
+                    <p>© Bmonument.</p>
+                </address>
+                <div class="ft_r">
+                    <div class="ft_sns">
+                        <a href="#"><img src="./images/instagram.png" alt=""></a>
+                        <a href="#"><img src="./images/youtube.png" alt=""></a>
+                        <a href="#"><img src="./images/facebook.png" alt=""></a>
+                    </div>
+                    <p class="ft_logo"><img src="./images/logo.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

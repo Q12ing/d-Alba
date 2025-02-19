@@ -75,9 +75,3 @@ main .sub_wrap .container .more_product a {
     border:1px solid #ccc; border-radius:5px;
 }
 main .sub_wrap .container .more_product a img {position:relative; top:3px;}
-main .sub_wrap .container .pagenation {}
-main .sub_wrap .container .pagenation .pagenation_box {}
-main .sub_wrap .container .pagenation .pagenation_box button {}
-main .sub_wrap .container .pagenation .pagenation_box button img {}
-main .sub_wrap .container .pagenation .pagenation_box a {}
-main .sub_wrap .container .pagenation .pagenation_box .active {}
