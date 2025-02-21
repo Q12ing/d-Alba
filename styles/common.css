@@ -58,7 +58,8 @@ header .nav_wrap .depth_menu .depth_container .depth_category .product ul li {wi
 header .nav_wrap .depth_menu .depth_container .depth_category .product ul li a {width:100%;}
 /* product 2줄 개인 CSS 끝 */
 header .nav_wrap .depth_menu .depth_container .depth_bnr {float:right; width:550px; margin-top:20px;} 
-header .nav_wrap .depth_menu .depth_container .depth_bnr img {width:100%;} 
+header .nav_wrap .depth_menu .depth_container .depth_bnr a {} 
+header .nav_wrap .depth_menu .depth_container .depth_bnr a img {width:100%;} 
 /* ============================================debth 메뉴 끝*/
 header .nav_wrap .m_nav {}
 header .nav_wrap .m_nav a:first-child {margin-left:0;}

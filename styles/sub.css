@@ -12,7 +12,7 @@ main .sub_wrap .category_bnr::before {
     width:100%; height:100%;
 }
 main .sub_wrap .category_bnr .category_title {
-    font-size:1.25rem; letter-spacing:-0.02em; color:#fff;
+    font-size:1.50rem; color:#fff;
     position:absolute; bottom:50px; left:50%; transform:translateX(-50%);
 } 
 main .sub_wrap .container {width:1400px; margin:30px auto 0;} /* 컨텐츠 너비 w1400 */ 

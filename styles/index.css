@@ -105,7 +105,7 @@ main .main_bnr .main_swiper .swiper-wrapper .slide3 .slide_title > * {color:#ccc
 main .main_bnr .main_swiper .swiper-wrapper .slide3 .slide_title .view_more {border-bottom-color:#ccc;}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .view_more {}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .view_more img {}
-main .main_bnr .main_dot {position:absolute; bottom:50%; right:150px; z-index:999; transform:translateY(50%); cursor:pointer;}
+main .main_bnr .main_dot {position:absolute; bottom:50%; right:150px; z-index:800; transform:translateY(50%); cursor:pointer;}
 .dot_active {opacity:1 !important;} /* 페이지네이션 활성화 클래스 */
 main .main_bnr .main_dot li {/* 페이지네이션 전체 */
     font-family:"gloockR","pretendard",sans-serif;
